@@ -17,7 +17,7 @@
         <button class="Button3">How am i doing so far</button>
     </div>
     <div class="Bovenstelijn">
-        <h1>The gaming stage</h1>
+        <button class="Homebutton">The gaming stage</button>
         <div class="Menulijn1"></div>
         <div class="Menulijn2"></div>
         <div class="Menulijn3"></div>
@@ -32,9 +32,9 @@ $(document).ready(function () {
     let menuknop = $(".Menuknop");
     let menutje = $(".Menu");
  menuknop.click(function(event){
-    if(event.button === 0 & menutje.css("display") == "none"){
+    if(menutje.css("display") == "none"){
         menutje.css("display", "block")
-    }else if(event.button === 0 & menutje.css("display") == "block"){
+    }else if(menutje.css("display") == "block"){
         menutje.css("display", "none")
     }else{
 console.warn("There is a issue")
@@ -44,6 +44,10 @@ console.warn("There is a issue")
 
 $(".Button1").click(function() {
     window.location.href = "Index.html";
+});
+
+$(".Homebutton").click(function(){
+    window.location.href = "index.html";
 });
 </script>
 </body>
