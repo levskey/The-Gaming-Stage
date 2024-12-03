@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    
+    <div class="Menu">
+        <button class="Button1">How to go pro</button>
+        <button class="Button2">Where to start</button>
+        <button class="Button3">How am i doing so far</button>
+    </div>
+    <div class="Bovenstelijn">
+        <h1>The gaming stage</h1>
+        <div class="Menulijn1"></div>
+        <div class="Menulijn2"></div>
+        <div class="Menulijn3"></div>
+        </div>
+            <button class="Menuknop"> Menu</button>
+    </div>
+    <Div class="ZwarteDiv"></Div>
+  
+            
+<script>
+$(document).ready(function () {
+    let menuknop = $(".Menuknop");
+    let menutje = $(".Menu");
+ menuknop.click(function(event){
+    if(event.button === 0 & menutje.css("display") == "none"){
+        menutje.css("display", "block")
+    }else if(event.button === 0 & menutje.css("display") == "block"){
+        menutje.css("display", "none")
+    }else{
+console.warn("There is a issue")
+    };
+ });
+});
+
+$(".Button1").click(function() {
+    window.location.href = "tweedepagina.html";
+});
+</script>
 </body>
 </html>
