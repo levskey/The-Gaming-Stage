@@ -51,20 +51,24 @@
     left: 5%;
 }
 
+.Section1 {
+    display: flex;
+    height: 500px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
 .Fortnite_picture{
-    height: 35%;
-    width: 35%;
-    position: fixed;
-    right: 50%;
-    top: 35%;
+    height: 500px;
+    width: 600px;
 }
 .RLCS_picture{
-    height: 35%;
-    width: 35%;
-    position: fixed;
-    right: 15%;
-    top: 35%;
+       height: 500px;
+    width: 600px;
 }
+
 @font-face {
     font-family: Roboto-Italic;
     src: url('/fonts/Roboto/Roboto-Italic.ttf');
@@ -134,29 +138,36 @@
     top: 32%;
 }
 
+.Menulijnen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lijnflex {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    padding-top: 20px;
+}
+
 .Menulijn1 {
     background-color: white;
     width: 50px;
     height: 4px;
-    position: relative;
-    left: 97%;
-    top: 25%;
+
 }
 
 .Menulijn2 {
     background-color: white;
     width: 50px;
     height: 4px;
-    position: relative;
-    left: 97%;
-    top: 37.5%;
+
 }
 
 .Menulijn3 {
     background-color: white;
     width: 50px;
     height: 4px;
-    position: relative;
-    left: 97%;
-    top: 50%;
+
+
 }
