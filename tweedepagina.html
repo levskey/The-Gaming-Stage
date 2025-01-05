@@ -36,8 +36,8 @@
     
     <div class="Menu">
         <button class="Button1">Home</button>
-        <button class="Button2">Where to Start</button>
-        <button class="Button3">How Am I Doing So Far</button>
+        <button class="Button2"> Where to Start</button>
+        <button class="Button3">Contact us</button>
     </div>
     
     <div class="Bovenstelijn">
@@ -57,9 +57,11 @@
     <div class="ZwarteDiv"></div>
     <footer>
         <div class="Onderstelaag">
-            <p>&copy; 2025 The Gaming Stage. All rights reserved.</p>
+            <p>&copy; 2025 The Gaming Stage</p>
+            <p><a href="Contactus.html" class="FooterContactLink">Contact Us</a></p>
         </div>
     </footer>
+    
     
     <script>
         $(document).ready(function () {
@@ -76,11 +78,19 @@
             });
 
             $(".Button1").click(function () {
-                window.location.href = "Index.html";
+                window.location.href = "index.html";
             });
 
             $(".Homebutton").click(function () {
                 window.location.href = "index.html";
+            });
+
+            $(".Button2").click(function () {
+                window.location.href = "tweedepagina.html";
+            });
+
+            $(".Button3").click(function () {
+                window.location.href = "Contactus.html";
             });
         });
     </script>

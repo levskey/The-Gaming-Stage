@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gaming Stage</title>
+    <link rel="stylesheet" href="css/3.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <section id="tekstnummer1">
+        <h1 class="Mainh1">Contact Us</h1>
+        <p>If you have any questions, feel free to reach out to us at:</p>
+        <p><a href="mailto:levboss13@hotmail.com" class="ContactEmail">levboss13@hotmail.com</a></p>
+    </section>
+    <div class="Menu">
+        <button class="Button1">Home</button>
+        <button class="Button2">Where to Start</button>
+        <button class="Button3">Contact Us</button>
+    </div>
+    <div class="Bovenstelijn">
+        <section class="Menulijnen">
+            <div>
+                <button class="Homebutton">The Gaming Stage</button>
+            </div>
+            <div class="lijnflex">
+                <div class="Menulijn1"></div>
+                <div class="Menulijn2"></div>
+                <div class="Menulijn3"></div>
+            </div>
+        </section>
+    </div>
+    <button class="Menuknop">Menu</button>
+    <footer>
+        <div class="Onderstelaag">
+            <p>&copy; 2025 The Gaming Stage</p>
+            <p><a href="Contactus.html" class="FooterContactLink">Contact Us</a></p>
+        </div>
+    </footer>
+    
+    
+    <script>
+        $(document).ready(function () {
+            let menuknop = $(".Menuknop");
+            let menutje = $(".Menu");
+            menuknop.click(function (event) {
+                if (menutje.css("display") == "none") {
+                    menutje.css("display", "block")
+                } else if (menutje.css("display") == "block") {
+                    menutje.css("display", "none")
+                } else {
+                    console.warn("There is an issue")
+                };
+            });
+
+            $(".Button1").click(function () {
+                window.location.href = "index.html";
+            });
+
+            $(".Homebutton").click(function () {
+                window.location.href = "index.html";
+            });
+
+            $(".Button2").click(function () {
+                window.location.href = "tweedepagina.html";
+            });
+
+            $(".Button3").click(function () {
+                window.location.href = "Contactus.html";
+            });
+        });
+    </script>
+</body>
+</html>

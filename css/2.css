@@ -156,46 +156,25 @@
 }
 
 
-#story {    
+#story, #how-to-go-pro {
     background-color: #f9f9f9;
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
-    max-width: 800px;
+    max-width: 90%; /* Adjusted to fit smaller screens */
+    width: 100%; /* Ensures full responsiveness */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensures padding is included in width */
 }
 
-#story h2 {
+#story h2, #how-to-go-pro h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
     text-align: center;
 }
 
-#story p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-#how-to-go-pro {
-    background-color: #eaf7ff;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 8px;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#how-to-go-pro h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-#how-to-go-pro p {
+#story p, #how-to-go-pro p {
     font-size: 16px;
     color: #555;
     line-height: 1.6;
