@@ -3,52 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Gaming stage</title>
+    <title>The Gaming Stage</title>
     <link rel="stylesheet" href="css/2.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <section>
-        <h1 class="Welkomsttekst">How to go pro?</h1>
+    <section id="tekstnummer1">
+        <!-- Section intentionally left empty to preserve ID -->
     </section>
+    
+    <section id="story" class="tekstnummer2">
+        <h2>How I Came Up with the Idea to Teach Pro Gaming</h2>
+        <p>Gaming has always been my passion. Ever since I picked up my first controller, I dreamed of becoming a professional gamer. But the journey wasn’t easy. I faced many challenges, like figuring out how to improve my skills, finding the right opportunities, and navigating the competitive gaming world.</p>
+        <p>Over time, I realized there was a gap—many gamers like me wanted to go pro but didn’t know where to start. That’s when the idea for this website was born. I wanted to create a platform to share my experiences, lessons, and the resources that helped me succeed.</p>
+        <p>This website is your guide to going pro, designed to make your journey smoother and more structured.</p>
+    </section>
+    
+    <section id="how-to-go-pro" class="tekstnummer3">
+        <h2>How to Go Pro in Gaming</h2>
+        <p>Going pro isn’t just about playing games—it’s about dedication, strategy, and constantly improving. Here are some key steps to help you on your path:</p>
+        <ul>
+            <li><strong>Pick Your Game:</strong> Focus on a single game you are passionate about and that has a thriving competitive scene.</li>
+            <li><strong>Master the Basics:</strong> Understand the game’s mechanics, strategies, and nuances. Watch tutorials and learn from top players.</li>
+            <li><strong>Practice Consistently:</strong> Set a regular practice schedule. Focus on improving your weak points while refining your strengths.</li>
+            <li><strong>Join the Community:</strong> Participate in forums, Discord groups, and social media communities to network and learn from others.</li>
+            <li><strong>Compete:</strong> Start with smaller tournaments to gain experience, then gradually aim for larger competitions.</li>
+            <li><strong>Build Your Brand:</strong> Create content on platforms like Twitch or YouTube to showcase your skills and build an audience.</li>
+            <li><strong>Stay Balanced:</strong> Physical and mental health are crucial. Get enough rest, exercise, and maintain a positive mindset.</li>
+        </ul>
+        <p>Remember, the journey to becoming a professional gamer is a marathon, not a sprint. Stay focused, keep learning, and never give up!</p>
+    </section>
+    
     <div class="Menu">
         <button class="Button1">Home</button>
-        <button class="Button2">Where to start</button>
-        <button class="Button3">How am i doing so far</button>
+        <button class="Button2">Where to Start</button>
+        <button class="Button3">How Am I Doing So Far</button>
     </div>
+    
     <div class="Bovenstelijn">
-        <button class="Homebutton">The gaming stage</button>
-        <div class="Menulijn1"></div>
-        <div class="Menulijn2"></div>
-        <div class="Menulijn3"></div>
-        </div>
-            <button class="Menuknop"> Menu</button>
+        <section class="Menulijnen">
+            <div>
+                <button class="Homebutton">The Gaming Stage</button>
+            </div>
+            <div class="lijnflex">
+                <div class="Menulijn1"></div>
+                <div class="Menulijn2"></div>
+                <div class="Menulijn3"></div>
+            </div>
+        </section>
     </div>
-    <Div class="ZwarteDiv"></Div>
-  
-            
-<script>
-$(document).ready(function () {
-    let menuknop = $(".Menuknop");
-    let menutje = $(".Menu");
- menuknop.click(function(event){
-    if(menutje.css("display") == "none"){
-        menutje.css("display", "block")
-    }else if(menutje.css("display") == "block"){
-        menutje.css("display", "none")
-    }else{
-console.warn("There is a issue")
-    };
- });
-});
+    
+    <button class="Menuknop">Menu</button>
+    <div class="ZwarteDiv"></div>
+    <footer>
+        <div class="Onderstelaag">
+            <p>&copy; 2025 The Gaming Stage. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        $(document).ready(function () {
+            let menuknop = $(".Menuknop");
+            let menutje = $(".Menu");
+            menuknop.click(function (event) {
+                if (menutje.css("display") == "none") {
+                    menutje.css("display", "block")
+                } else if (menutje.css("display") == "block") {
+                    menutje.css("display", "none")
+                } else {
+                    console.warn("There is an issue")
+                };
+            });
 
-$(".Button1").click(function() {
-    window.location.href = "Index.html";
-});
+            $(".Button1").click(function () {
+                window.location.href = "Index.html";
+            });
 
-$(".Homebutton").click(function(){
-    window.location.href = "index.html";
-});
-</script>
+            $(".Homebutton").click(function () {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
 </body>
 </html>
