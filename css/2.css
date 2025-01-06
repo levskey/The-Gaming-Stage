@@ -11,7 +11,7 @@
 
 #tekstnummer1 {
     position: relative;
-    margin-top: 15vh; /* Adjusted margin-top to 15vh */
+    margin-top: 15vh;
     padding: 2%;
 }
 
@@ -161,10 +161,10 @@
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
-    max-width: 90%; /* Adjusted to fit smaller screens */
-    width: 100%; /* Ensures full responsiveness */
+    max-width: 90%; 
+    width: 100%; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Ensures padding is included in width */
+    box-sizing: border-box; 
 }
 
 #story h2, #how-to-go-pro h2 {

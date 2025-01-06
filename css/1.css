@@ -88,13 +88,13 @@
 }
 
 .Menuknop {
-    width: 50px; /* Zelfde breedte als de menu-lijnen */
-    height: 30px; /* Pas aan naar gewenste hoogte */
-    position: fixed; /* Zorgt ervoor dat de knop in de hoek blijft */
-    top: 20px; /* Consistente afstand vanaf de bovenkant */
-    right: 20px; /* Consistente afstand vanaf de rechterkant */
-    opacity: 0; /* Blijft verborgen totdat je dit wijzigt */
-    cursor: pointer; /* Verandert de muisaanwijzer bij hover */
+    width: 50px;
+    height: 30px;
+    position: fixed;
+    top: 20px;
+    right: 20px; 
+    opacity: 0; 
+    cursor: pointer; 
 }
 
 
@@ -143,25 +143,23 @@
     justify-content: space-between;
 }
 
-/* Zorgt ervoor dat de container rechtsboven wordt geplaatst */
 .lijnflex {
     display: flex;
-    flex-direction: column; /* Menu-items onder elkaar */
-    justify-content: center; /* Optioneel, voor verticale uitlijning */
-    align-items: center; /* Horizontale centrering van de lijnen */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     
-    position: absolute; /* Maakt positioning mogelijk */
-    top: 20px; /* Afstand vanaf de bovenkant */
-    right: 20px; /* Afstand vanaf de rechterkant */
-    width: 50px; /* Breedte aanpassen naar menu-lijnen */
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
 }
 
-/* Gestandaardiseerde menu-lijnen */
+
 .Menulijn1, .Menulijn2, .Menulijn3 {
     background-color: white;
     width: 50px;
     height: 4px;
-    margin: 5px 0; /* Ruimte tussen lijnen */
+    margin: 5px 0; 
 }
 
 .Onderstelaag {
